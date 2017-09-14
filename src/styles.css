@@ -1,0 +1,40 @@
+@import url(~@angular/material/prebuilt-themes/indigo-pink.css);
+body {
+  margin: auto;
+  background-color: blueviolet; }
+
+.frontPage {
+  background-color: pink; }
+
+.frontPage {
+  background-color: pink; }
+
+.container {
+  max-height: 100%; }
+
+.input-Prop {
+<<<<<<< HEAD
+  width: 322px; }
+
+.home-fixed-container {
+  padding: 0px !important; }
+
+.home-registration-container {
+  height: 614px; }
+
+.image-container img {
+  width: 760px; }
+
+.image-container {
+  position: relative; }
+
+.button-container {
+  position: absolute; }
+
+.mat-button[_ngcontent-c0], .mat-icon-button[_ngcontent-c0] {
+  background-color: #B2AEAE; }
+=======
+  width: 400px; }
+>>>>>>> 5b75144760601837495293227e31530b9f9edffc
+
+/*# sourceMappingURL=styles.css.map */
