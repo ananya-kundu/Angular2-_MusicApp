@@ -1,21 +1,15 @@
-import { NgModule,Injectable } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { Router, CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
-import { Observable } from 'rxjs';
+import { ModuleWithProviders }  from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+// import { HomeSigninComponent } from './home-signin/home-signin.component';
 
-@Injectable()
-export class AuthGuard implements CanActivate {
- 
-    constructor(private router: Router) { }
- 
-    canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
-        if (localStorage.getItem('currentUser')) {
-            // logged in so return true
-            return true;
-        }
- 
-        // not logged in so redirect to login page with the return url
-        this.router.navigate(['/login'], { queryParams: { returnUrl: state.url }});
-        return false;
-    }
-}
+// Route Configuration
+export const routes: Routes = [
+  { path: '', component: SignUpComponent },
+  { path: 'signin', component: SignInComponent }
+  // { path: 'home', component : HomeSigninComponent}
+];
+
+
+export const routing: ModuleWithProviders = RouterModule.forRoot(routes);

@@ -1,4 +1,9 @@
 <!--The content below is only a placeholder and can be replaced.-->
+
+<router-outlet></router-outlet>
+
+
+
 <div fxFlex fxLayout="column">
 <md-toolbar>
     <div class="primary">
@@ -12,18 +17,19 @@
             <div class="image-container" fxFlex>
              <img src="../assets/guitar.jpg"/>             
             </div>
-            <div class="button-container" fxLayout="column">
-                <button [color]="warn" md-button (click)="signUp()">SIGN UP</button>
-                <button [color]="warn" md-button (click)="signIn()">SIGN IN</button>
+            <div class="button-container" fxLayout="column" fxLayoutAlign="center start">
+                <button [color]="warn" md-button  [routerLink]="['/']">SIGN UP</button>
+                <button [color]="warn" md-button  [routerLink]="['/signin']">SIGN IN</button>
             </div>
         </md-card>
     </div>
             <div fxFlex="42%" fxFlexOffset="6px">
                     <md-card fxLayoutAlign="center center" class="home-registration-container">
-                            <md-tab-group>
+                        <router-outlet></router-outlet>
+                        <!-- <md-tab-group>
                                     <md-tab label="SIGN UP"><app-sign-up></app-sign-up></md-tab>
                                     <md-tab label="SIGN IN"><app-sign-in></app-sign-in></md-tab>
-                            </md-tab-group>
+                            </md-tab-group> -->
                         </md-card>
             </div>
     </div>

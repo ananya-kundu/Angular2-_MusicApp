@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { FormsModule, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+
 import { Observable } from 'rxjs';
 import 'rxjs/add/operator/startWith';
 import 'rxjs/add/operator/map';
@@ -24,12 +25,19 @@ import { MdIconRegistry } from '@angular/material';
 import { AppComponent } from './app.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+
 
 //services
 import { DataSetrviceService } from './userRegister/services/data-setrvice.service';
 
+
+import {routing} from './routerModule';
+// import { HomeSigninComponent } from './home-signin/home-signin.component';
+
+
 @NgModule({
-  declarations: [AppComponent,SignInComponent,SignUpComponent],
+  declarations: [AppComponent,SignInComponent,SignUpComponent,NotFoundComponent],
   imports: [
     BrowserModule,
     FlexLayoutModule,
@@ -39,7 +47,10 @@ import { DataSetrviceService } from './userRegister/services/data-setrvice.servi
     MaterialsModule,
     HttpClientModule,
     HttpModule,
-    BrowserAnimationsModule
+    routing,
+    BrowserAnimationsModule,
+    
+    
     
   ],
   providers: [MdIconRegistry,DataSetrviceService,{provide: MD_PLACEHOLDER_GLOBAL_OPTIONS, useValue: {float: ''}}],
