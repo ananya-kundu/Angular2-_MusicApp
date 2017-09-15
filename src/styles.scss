@@ -1,22 +1,11 @@
-// deeppurple-amber.css
-// indigo-pink.css
-// pink-bluegrey.css
-// purple-green.css
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-// @import '~@angular/material/theming';
-// @include mat-core()
-// $font-stack:Helvetica, sans-serif;
-// $flag-icon-css-path: '~assets/font-family/Myriad-Pro-Light-SemiCondensed_31639' !default;
-// @import "~assets/font-family/Myriad-Pro-Light-SemiCondensed_31639";
-// @include font-face(Myriad-Pro,font-family/Myriad-Pro-Light-SemiCondensed_31639);
-// @import url('../assets/font-family/Myriad-Pro-Light-SemiExtended-Italic_31640.ttf=myriad');
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 
 body{
   // font: 100% $font-stack;
   margin: auto;
-  background-color: blueviolet;
+  // background-color: blueviolet;
 }
 
 .frontPage{
@@ -32,7 +21,6 @@ body{
 }
 
 .input-Prop{
-<<<<<<< HEAD
   width: 322px;
 }
 
@@ -59,7 +47,5 @@ body{
 
 .mat-button[_ngcontent-c0], .mat-icon-button[_ngcontent-c0]{
   background-color: #B2AEAE;
-=======
   width: 400px;
->>>>>>> 5b75144760601837495293227e31530b9f9edffc
 }
